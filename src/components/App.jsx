@@ -1,8 +1,14 @@
+import { Profile } from "./Profile";
+import { Statistics } from "./Statistics";
+
+import userData from '../user.json';
+import statisticsData from '../data.json';
+
 export const App = () => {
   return (
     <div
       style={{
-        height: '100vh',
+        
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
@@ -10,7 +16,11 @@ export const App = () => {
         color: '#010101'
       }}
     >
-      React homework template
+      <Profile user={userData} />
+      <br />
+      <Statistics statistics={statisticsData} />
     </div>
+    
+
   );
 };
