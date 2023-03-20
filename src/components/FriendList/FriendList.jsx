@@ -1,7 +1,7 @@
-import { Friend } from "./Friend"
+import { Friend } from "../Friend/Friend"
 
 export function FriendList({ friends }) {
-    return <ul class="friend-list">
+    return <ul className="friend-list">
         {friends.map((friend) => {
             return <li key={friend.id}>
                 <Friend friend={friend}/>

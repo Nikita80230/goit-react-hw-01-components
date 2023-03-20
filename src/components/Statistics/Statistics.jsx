@@ -1,10 +1,10 @@
-import { StatisticsItem } from "./StatisticsItem"
+import { StatisticsItem } from "../StatisticsItem/StatisticsItem"
 
 export function Statistics({ statistics }) {
-    return <section class="statistics">
-        <h2 class="title">Upload stats</h2>
+    return <section className="statistics">
+        <h2 className="title">Upload stats</h2>
         
-        <ul class="stat-list">
+        <ul className="stat-list">
             {statistics.map((item) => (
                 <li key = {item.id}>
                     <StatisticsItem item={item} />

@@ -1,7 +1,7 @@
-import { Transaction } from "./Transaction";
+import { Transaction } from "../Transaction/Transaction";
 
 export function TransactionHistory({ transactionsData }) {
-    return <table class="transaction-history">
+    return <table className="transaction-history">
             <thead>
                 <tr>
                     <th>Type</th>
