@@ -1,0 +1,9 @@
+.statisticsItem {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(249, 244, 148);
+  border: 3px solid yellow;
+  border-radius: 20px;
+  text-align: center;
+  width: 180px;
+}
