@@ -1,5 +1,7 @@
 import { Friend } from "../Friend/Friend"
 
+import PropTypes from 'prop-types'; 
+
 export function FriendList({ friends }) {
     return <ul className="friend-list">
         {friends.map((friend) => {
@@ -9,3 +11,7 @@ export function FriendList({ friends }) {
         })}
     </ul>
 }
+
+FriendList.propTypes = {
+  friends: PropTypes.array,
+};

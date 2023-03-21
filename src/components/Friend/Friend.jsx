@@ -1,4 +1,7 @@
+import PropTypes from 'prop-types'; 
+
 import css from './Friend.module.css'
+
 import { BsPersonFillCheck } from "react-icons/bs";
 import { BsPersonFillSlash } from "react-icons/bs";
 
@@ -12,4 +15,9 @@ export function Friend({ friend }) {
     
 }
 
+Friend.propTypes = {
+  avatar: PropTypes.string,
+  name: PropTypes.string,
+  isOnline: PropTypes.bool,
+};
 

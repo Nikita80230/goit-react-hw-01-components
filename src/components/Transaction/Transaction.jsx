@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types'; 
+
 export function Transaction({ transaction }) {
     const { type, amount, currency} = transaction;
     return <tr>
@@ -7,3 +9,7 @@ export function Transaction({ transaction }) {
     </tr>
 }
 
+
+Transaction.propTypes = {
+  transaction: PropTypes.object,
+};
